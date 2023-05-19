@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/login.css">
+
+<div class="wrapper">
+    <div class="logo">
+        <img src="/img/logo.jpeg" alt="">
+    </div>
+    <div class="text-center mt-4 name">
+        Chat
+    </div>
+    <form class="p-3 mt-3" method="post" action="/auth/register">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="username" id="userName" placeholder="Username">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="password" name="password" id="pwd" placeholder="Password">
+        </div>
+        <button class="btn mt-3">Register</button>
+    </form>
+    <div class="text-center fs-6">
+        <a href="/auth/login">Login</a>
+    </div>
+</div>

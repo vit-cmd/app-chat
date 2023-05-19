@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: 'mysql:8.0.32'
+    container_name: chat-mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mysql/config/my_custom.cnf:/opt/bitnami/mysql/conf/my_custom.cnf:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=chat
+      - MYSQL_CHARACTER_SET=utf8mb4
+      - MYSQL_COLLATE=utf8mb4_general_ci
